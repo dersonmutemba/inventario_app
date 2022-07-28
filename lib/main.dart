@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:inventario/pages/home.dart';
+import 'package:inventario/frame/pagescontainer.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       darkTheme: ThemeData(
-        primarySwatch: Colors.deepPurple,
+        primarySwatch: Colors.purple,
         backgroundColor: const Color.fromRGBO(40, 40, 40, 1),
         scaffoldBackgroundColor: const Color.fromRGBO(30, 30, 30, 1),
         dialogBackgroundColor: const Color.fromRGBO(30, 30, 30, 1),
@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
-      home: const Home(),
+      home: PagesContainer(),
     );
   }
 }
