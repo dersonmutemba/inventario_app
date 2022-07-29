@@ -33,7 +33,7 @@ class _PagesContainerState extends State<PagesContainer>{
       body: widget.widgets[widget._currentPage],
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Theme.of(context).primaryColor.withAlpha(50),
-        elevation: 1,
+        elevation: 0,
         currentIndex: widget._currentPage,
         selectedItemColor: Theme.of(context).primaryColor,
         unselectedItemColor: Theme.of(context).iconTheme.color,
