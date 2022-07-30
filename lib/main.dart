@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:inventario/database/database.dart';
 import 'package:inventario/frames/pagescontainer.dart';
 
 void main() {
@@ -10,6 +11,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Database database = Database();
+    database.initialize();
     return MaterialApp(
       title: 'Inventário',
       theme: ThemeData(

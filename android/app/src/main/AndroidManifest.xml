@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.inventario">
+    package="mz.co.deryandrady.inventario">
    <application
-        android:label="inventario"
+        android:label="Inventário"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
