@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:inventario/frame/pagescontainer.dart';
+import 'package:inventario/frames/pagescontainer.dart';
 
 void main() {
   runApp(const MyApp());
