@@ -1,6 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/widgets.dart';
+import 'package:inventario/models/product.dart';
+import 'package:inventario/models/storage.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 
@@ -8,24 +10,9 @@ class Database {
   static const String databaseName = 'inventario.db';
   static const int databaseVersion = 1;
 
-  static const Map<String, String> product = {
-    'table' : 'product',
-    'key' : 'id',
-    'field1' : 'name',
-    'field2' : 'category',
-    'field3' : 'price',
-    'field4' : 'massamount',
-    'field5' : 'massunity',
-    'field6' : 'volumeamount',
-    'field7' : 'volumeunity',
-  };
+  static const Map<String, String> product = Product.product;
 
-  static const Map<String, String> storage = {
-    'table' : 'storage',
-    'key' : 'id',
-    'field1' : 'name',
-    'field2' : 'location',
-  };
+  static const Map<String, String> storage = Storage.storage;
 
   static const Map<String, String> acquisition = {
     'table' : 'acquision',

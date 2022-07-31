@@ -5,6 +5,18 @@ class Product {
   double price;
   Map<double, String>? mass;
   Map<double, String>? volume;
+
+  static const Map<String, String> product = {
+    'table' : 'product',
+    'key' : 'id',
+    'field1' : 'name',
+    'field2' : 'category',
+    'field3' : 'price',
+    'field4' : 'massamount',
+    'field5' : 'massunity',
+    'field6' : 'volumeamount',
+    'field7' : 'volumeunity',
+  };
   
   Product({required num id, required this.name,  this.category, required this.price, this.mass,
   this.volume}) {
@@ -35,6 +47,19 @@ class Product {
 
   double? getVolume() {
     return volume?.keys.first;
+  }
+
+  Map<String, dynamic> toMap() {
+    return {
+      product['key']! : _id,
+      product['field1']! : name,
+      product['field2']! : category,
+      product['field3']! : price,
+      product['field4']! : getMass(),
+      product['field5']! : getMassUnity(),
+      product['field6']! : getVolume(),
+      product['field7']! : getVolumeUnity(),
+    };
   }
 
 }
