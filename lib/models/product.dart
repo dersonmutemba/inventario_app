@@ -18,19 +18,19 @@ class Product {
     'field7' : 'volumeunity',
   };
   
-  Product({required num id, required this.name,  this.category, required this.price, this.mass,
-  this.volume}) {
+  Product({required num id, required this.name,  this.category, required this.price,
+  this.mass, this.volume}) {
     _id = id;
   }
 
   num get id => _id;
 
   void setMass({required String unity, required double ammount}) {
-    mass = {ammount, unity} as Map<double, String>?;
+    mass = {ammount : unity};
   }
 
   void setVolume({required String unity, required double ammount}) {
-    volume = {ammount, unity} as Map<double, String>?;
+    volume = {ammount : unity};
   }
 
   String? getMassUnity() {
