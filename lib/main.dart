@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Inventário',
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
+        cardColor: Colors.deepPurple.shade200,
         backgroundColor: Colors.white,
         iconTheme: IconThemeData(
           color: Colors.grey[600],
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
       ),
       darkTheme: ThemeData(
         primarySwatch: Colors.purple,
+        cardColor: Colors.purple.shade200,
         backgroundColor: const Color.fromRGBO(40, 40, 40, 1),
         scaffoldBackgroundColor: const Color.fromRGBO(30, 30, 30, 1),
         dialogBackgroundColor: const Color.fromRGBO(30, 30, 30, 1),
