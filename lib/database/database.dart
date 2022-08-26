@@ -38,7 +38,8 @@ class Database {
           ' ${product['field4']} REAL,'
           ' ${product['field5']} TEXT,'
           ' ${product['field6']} REAL,'
-          ' ${product['field7']} TEXT'
+          ' ${product['field7']} TEXT,'
+          ' ${product['field8']} TEXT'
         ');'
         'CREATE TABLE ${storage['table']} ('
           '${storage['key']} INTEGER PRIMARY KEY,'
@@ -95,6 +96,7 @@ class Database {
         category: products[i][product['field2']],
         mass: {products[i][product['field4']] : products[i][product['field5']]},
         volume: {products[i][product['field6']] : products[i][product['field7']]},
+        image: products[i][product['field8']],
       );
     });
   }

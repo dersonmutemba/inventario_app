@@ -1,7 +1,7 @@
 class Product {
   late final num _id;
   String name;
-  String? category;
+  String? category, image;
   double price;
   Map<double, String>? mass;
   Map<double, String>? volume;
@@ -16,10 +16,11 @@ class Product {
     'field5' : 'massunity',
     'field6' : 'volumeamount',
     'field7' : 'volumeunity',
+    'field8' : 'image',
   };
   
   Product({required num id, required this.name,  this.category, required this.price,
-  this.mass, this.volume}) {
+  this.mass, this.volume, this.image}) {
     _id = id;
   }
 
@@ -59,6 +60,7 @@ class Product {
       product['field5']! : getMassUnity(),
       product['field6']! : getVolume(),
       product['field7']! : getVolumeUnity(),
+      product['field8']! : image,
     };
   }
 
